@@ -9,7 +9,7 @@ interface IMoviesGalleryProps {
   title: string;
   url: string;
   navigation: any;
-  testID: string;
+  testID?: string;
 }
 
 export const MoviesGallery: FC<IMoviesGalleryProps> = ({ title, url, navigation, testID }) => {
