@@ -1,4 +1,4 @@
-import { IIOSShadow } from '@styles';
+import { colors, IIOSShadow } from '@styles';
 
 export type ScaleFunction = (size: number) => number;
 type SpacingParameter = number | 'auto';
@@ -8,6 +8,8 @@ export interface Theme {
   verticalScale: ScaleFunction;
   moderateScale: ScaleFunction;
   moderateVerticalScale: ScaleFunction;
+
+  colors: typeof colors;
 
   shadowNone: IIOSShadow;
   shadowSmall: IIOSShadow;
