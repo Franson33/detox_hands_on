@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
+import { DiscoverMovies, MoviesGallery, TrendingPeople, YellowButton } from '@components';
 import { HomeStackParams } from '@navigator';
 import { theme } from '@theme';
 

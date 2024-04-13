@@ -1,7 +1,7 @@
 import { colors, IIOSShadow } from '@styles';
 
 export type ScaleFunction = (size: number) => number;
-type SpacingParameter = number | 'auto';
+type SpacingParameter = number;
 
 export interface Theme {
   scale: ScaleFunction;
@@ -16,7 +16,6 @@ export interface Theme {
   shadowMiddle: IIOSShadow;
 
   none: SpacingParameter;
-  auto: SpacingParameter;
   miniscule: SpacingParameter;
   smallest: SpacingParameter;
   small: SpacingParameter;

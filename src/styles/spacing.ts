@@ -1,6 +1,5 @@
 export const spacing = {
   None: 0,
-  Auto: 'auto',
   Miniscule: 2,
   Smallest: 8,
   Small: 16,

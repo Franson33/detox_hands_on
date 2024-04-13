@@ -34,7 +34,6 @@ export const theme: Theme = {
 
   // Scaled spacing sizes
   none: spacing.None,
-  auto: spacing.Auto,
   miniscule: scale(spacing.Miniscule),
   smallest: scale(spacing.Smallest),
   small: scale(spacing.Small),
