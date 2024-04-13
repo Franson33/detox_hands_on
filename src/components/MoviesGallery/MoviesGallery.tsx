@@ -3,6 +3,7 @@ import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react
 
 import { GET, POSTER_IMAGE } from '@api';
 import { Loader } from '@components';
+import { homeStackScreens } from '@navigator';
 import { theme } from '@theme';
 
 interface IMoviesGalleryProps {
@@ -49,7 +50,7 @@ const displayMovies = ({ item }, { navigation, testID }) => {
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.push('movieDetails', { movieId: item.id });
+        navigation.push(homeStackScreens.DETAILS, { movieId: item.id });
       }}
       style={{ marginHorizontal: 10 }}>
       <Image
