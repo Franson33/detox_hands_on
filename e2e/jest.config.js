@@ -1,7 +1,8 @@
 /** @type {import('@jest/types').Config.InitialOptions} */
 module.exports = {
+  preset: 'ts-jest',
   rootDir: '..',
-  testMatch: ['<rootDir>/e2e/**/*.test.tsx'],
+  testMatch: ['<rootDir>/e2e/**/*.test.(js|ts|tsx)'],
   testTimeout: 120000,
   maxWorkers: 1,
   globalSetup: 'detox/runners/jest/globalSetup',
