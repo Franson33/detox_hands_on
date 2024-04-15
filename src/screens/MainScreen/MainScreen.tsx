@@ -11,7 +11,7 @@ type IMainScreenProps = NativeStackScreenProps<HomeStackParams, 'Home'>;
 
 export const MainScreen: FC<IMainScreenProps> = ({ route, navigation }) => {
   return (
-    <ScrollView style={styles.sectionBg}>
+    <ScrollView style={styles.sectionBg} testID="MainScreen">
       <DiscoverMovies navigation={navigation} />
       <YellowButton />
       <MoviesGallery title="Trending Movies" url="/movie/top_rated" navigation={navigation} testID="TrendingMovies" />

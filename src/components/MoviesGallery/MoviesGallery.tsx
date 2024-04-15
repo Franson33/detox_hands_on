@@ -33,7 +33,9 @@ export const MoviesGallery: FC<IMoviesGalleryProps> = ({ title, url, navigation,
         <Loader />
       ) : (
         <View>
-          <Text style={styles.heading}>{title}</Text>
+          <Text style={styles.heading} testID="GalleryTitle">
+            {title}
+          </Text>
           <FlatList
             keyExtractor={item => item.id}
             data={movies}
